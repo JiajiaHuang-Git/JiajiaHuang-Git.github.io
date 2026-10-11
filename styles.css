@@ -1,8 +1,8 @@
 :root {
   --paper: #fff;
-  --ink: #252b33;
-  --body: #434a54;
-  --muted: #69717c;
+  --ink: #000;
+  --body: #000;
+  --muted: #000;
   --accent: #305781;
   --line: #e2e5e9;
   --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
