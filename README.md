@@ -6,7 +6,7 @@ A lightweight, responsive static website. No build tools, tracking scripts, or e
 
 ## Edit
 
-- Personal introduction, research, publications and links: `index.html`
+- About Me, Contact and profile links: `index.html`
 - Layout and colors: `styles.css`
 - Sidebar avatar (copied from the public GitHub profile): `avatar.jpg`
 - Search engine discovery: `robots.txt` and `sitemap.xml`
