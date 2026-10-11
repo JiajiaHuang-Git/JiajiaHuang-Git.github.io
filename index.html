@@ -8,10 +8,10 @@
   <meta name="author" content="Jiajia Huang">
   <meta name="google-site-verification" content="xiNIbXQOBbP9VqUsbp9h1c9NTyHnyQVJ1vRUBwKWVAk">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#173c3b">
+  <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://jiajiahuang-git.github.io/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg?v=20261011" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20261011">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Jiajia Huang | HKUST">
@@ -50,87 +50,48 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#main" aria-label="Jiajia Huang, home">JH<span class="wordmark-dot">.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="site-name" href="#about">Jiajia Huang</a>
       <a href="#publications">Publications</a>
-      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      <a href="#code">Research code</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> COMPUTATIONAL PHYSICS · HKUST</p>
-        <h1 id="hero-title">Jiajia<br><em>Huang.</em></h1>
-        <p class="hero-description">Exploring molecular systems through<br class="desktop-break"> physics and machine learning.</p>
-        <p class="hero-affiliation">PhD student · Department of Physics<br>The Hong Kong University of Science and Technology</p>
-        <div class="hero-links">
-          <a class="button" href="mailto:jhuangdd@connect.ust.hk">Get in touch <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="https://github.com/JiajiaHuang-Git">GitHub <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="https://orcid.org/0000-0002-3757-5153">ORCID <span aria-hidden="true">↗</span></a>
-        </div>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Jiajia Huang's profile">
+      <img class="profile-avatar" src="avatar.jpg" alt="Jiajia Huang’s GitHub avatar" width="180" height="180">
+      <div class="profile-heading">
+        <h2>Jiajia Huang</h2>
+        <p class="profile-bio">PhD student in computational physics at HKUST</p>
       </div>
-      <figure class="hero-figure">
-        <svg viewBox="0 0 480 490" role="img" aria-labelledby="molecule-title molecule-description">
-          <title id="molecule-title">An abstract molecular sketch</title>
-          <desc id="molecule-description">A stylized methane molecule over a scientific grid, with a spectral curve underneath. An illustration, not simulation data.</desc>
-          <defs>
-            <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#d8e2dd" stroke-width=".7"/></pattern>
-            <radialGradient id="carbon"><stop stop-color="#638a7e"/><stop offset="1" stop-color="#244c45"/></radialGradient>
-            <radialGradient id="hydrogen"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#c1d2c4"/></radialGradient>
-          </defs>
-          <rect x="20" y="20" width="440" height="440" rx="220" fill="url(#grid)"/>
-          <circle cx="240" cy="234" r="193" fill="none" stroke="#bfd2c7" stroke-width="1"/>
-          <circle cx="240" cy="234" r="157" fill="none" stroke="#cfdbd2" stroke-dasharray="3 8"/>
-          <path d="M84 234H396M240 78V390" stroke="#c8d7cf" stroke-width="1"/>
-          <g stroke="#8aa69a" stroke-width="8" stroke-linecap="round">
-            <path d="M238 224L170 111M238 224L361 192M238 224L259 355"/>
-            <path d="M238 224L117 292" stroke-dasharray="2 13" stroke-width="6"/>
-          </g>
-          <circle cx="170" cy="111" r="25" fill="url(#hydrogen)" stroke="#9db4a6"/>
-          <circle cx="361" cy="192" r="25" fill="url(#hydrogen)" stroke="#9db4a6"/>
-          <circle cx="117" cy="292" r="23" fill="url(#hydrogen)" stroke="#9db4a6"/>
-          <circle cx="259" cy="355" r="26" fill="url(#hydrogen)" stroke="#9db4a6"/>
-          <circle cx="238" cy="224" r="44" fill="url(#carbon)"/>
-          <g font-family="Georgia,serif" font-size="20" text-anchor="middle" fill="#23453d">
-            <text x="170" y="118">H</text><text x="361" y="199">H</text><text x="117" y="299">H</text><text x="259" y="362">H</text>
-            <text x="238" y="232" fill="#fffdf6" font-size="25">C</text>
-          </g>
-          <g fill="#4f6e63" font-family="monospace" font-size="11">
-            <text x="46" y="62">01 / MOLECULAR SYSTEMS</text><text x="341" y="383">CH₄</text>
-          </g>
-          <path d="M67 432H413" stroke="#b6cbbf"/>
-          <path d="M67 426L129 426Q139 426 144 414Q148 403 151 426L214 426Q226 426 231 402Q239 352 245 426L290 426Q300 426 305 409Q313 389 320 426L413 426" stroke="#45705e" stroke-width="1.8" fill="none"/>
-          <text x="67" y="454" font-family="monospace" font-size="10" fill="#4f6e63">PHYSICS × MACHINE LEARNING</text>
-        </svg>
-        <figcaption>From molecular motion to physical insight.</figcaption>
-      </figure>
-    </section>
+      <ul class="profile-links">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.4 7-13a7 7 0 0 0-14 0c0 6.6 7 13 7 13Z"/><circle cx="12" cy="8" r="2.5"/></svg><span>Hong Kong</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5M3 9h18M5 10v9m5-9v9m4-9v9m5-9v9M3 21h18"/></svg><a href="https://hkust.edu.hk/">HKUST</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 15 6-6M8 16l-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 1 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0"/></svg><a href="https://jiajiahuang-git.github.io/">Website</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 5 9 8 9-8"/></svg><a href="mailto:jhuangdd@connect.ust.hk">Email</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 10v6m0-9v.5M12 9h2a3.5 3.5 0 0 1 0 7h-2Z"/></svg><a href="https://orcid.org/0000-0002-3757-5153">ORCID</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16"/></svg><a href="https://github.com/JiajiaHuang-Git">GitHub</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-17a3 3 0 0 1 0 6m3 11v-3a6 6 0 0 0-3-5"/></svg><a href="https://angstrom.hkust.edu.hk/">Ångström Group</a></li>
+      </ul>
+    </aside>
 
-    <section class="section about-section" id="about" aria-labelledby="about-title">
-      <div class="section-label"><span>01</span><h2 id="about-title">About</h2></div>
-      <div class="section-body">
-        <p class="lead">I am a PhD student in computational physics at <a href="https://hkust.edu.hk/">HKUST</a> and a member of the <a href="https://angstrom.hkust.edu.hk/">Ångström Group</a>, led by Prof. Ding Pan.</p>
-        <p>My research interests lie at the intersection of first-principles simulations, molecular dynamics and machine learning. I am interested in using these tools to understand molecular behavior and spectroscopy, including systems under extreme pressure and temperature.</p>
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h1 id="about-title">About Me</h1>
+        <p>I am a PhD student in computational physics at <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)</a> and a member of the <a href="https://angstrom.hkust.edu.hk/">Ångström Group</a>, led by Prof. Ding Pan.</p>
+        <p>I received my B.S. degree from Beijing Normal University. My research focuses on molecular systems, connecting first-principles simulations with machine learning to understand molecular behavior and spectroscopy.</p>
         <p>For research code and projects, visit <a href="https://github.com/JiajiaHuang-Git">Jiajia Huang’s GitHub profile</a>.</p>
-        <p class="education-note"><span>EDUCATION</span> PhD studies in Physics · HKUST<br><span aria-hidden="true"></span> B.S. · Beijing Normal University</p>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="research" aria-labelledby="research-title">
-      <div class="section-label"><span>02</span><h2 id="research-title">Research interests</h2></div>
-      <div class="section-body research-grid">
-        <article class="research-item"><span class="research-number">I.</span><h3>AI for Science</h3><p>Connecting machine learning with physical understanding to study molecular systems.</p></article>
-        <article class="research-item"><span class="research-number">II.</span><h3>Molecular dynamics</h3><p>First-principles and machine-learning approaches to molecular motion and interactions.</p></article>
-        <article class="research-item"><span class="research-number">III.</span><h3>Spectroscopy</h3><p>Understanding infrared spectra and molecular dipole moments from atomistic simulations.</p></article>
-      </div>
-    </section>
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research Interests</h2>
+        <p>My research interests include AI for Science, machine-learning molecular dynamics, and first-principles spectroscopy. I am particularly interested in molecular motion, dipole moments, and infrared spectra under extreme pressure and temperature conditions.</p>
+      </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
-      <div class="section-label"><span>03</span><h2 id="publications-title">Selected publications</h2></div>
-      <div class="section-body">
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Selected Publications</h2>
+
         <article class="publication">
           <div class="publication-meta"><span>2025</span><span>CHEMICAL PHYSICS LETTERS</span></div>
           <h3><a href="https://doi.org/10.1016/j.cplett.2025.142036">First-principles machine-learning study of infrared spectra of methane under extreme pressure and temperature conditions <span aria-hidden="true">↗</span></a></h3>
@@ -146,32 +107,26 @@
           <p class="contribution">* Equal contribution.</p>
           <div class="publication-links"><a href="https://doi.org/10.1002/anie.202425261">Paper <span aria-hidden="true">↗</span></a></div>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="code" aria-labelledby="code-title">
-      <div class="section-label"><span>04</span><h2 id="code-title">Research code</h2></div>
-      <div class="section-body">
+      <section id="code" aria-labelledby="code-title">
+        <h2 id="code-title">Research Code</h2>
         <article class="code-project">
-          <div class="code-heading"><p class="eyebrow">PYTHON · TENSORFLOW</p><span aria-hidden="true">↗</span></div>
           <h3><a href="https://github.com/JiajiaHuang-Git/Methane-NN-dipole-model">Methane neural-network dipole model</a></h3>
           <p>A neural-network model for predicting molecular dipole moments of methane under high-pressure and high-temperature conditions, trained on first-principles molecular dynamics data.</p>
-          <a class="text-link" href="https://github.com/JiajiaHuang-Git/Methane-NN-dipole-model">Explore the repository <span aria-hidden="true">↗</span></a>
+          <p class="code-links"><span>Python · TensorFlow</span><a href="https://github.com/JiajiaHuang-Git/Methane-NN-dipole-model">View on GitHub →</a></p>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="section-label"><span>05</span><h2 id="contact-title">Contact</h2></div>
-      <div class="section-body">
-        <p class="contact-intro">Let’s connect.</p>
-        <a class="contact-email" href="mailto:jhuangdd@connect.ust.hk">jhuangdd@connect.ust.hk <span aria-hidden="true">↗</span></a>
-        <p>Department of Physics · HKUST · Hong Kong</p>
-        <div class="contact-links"><a href="https://github.com/JiajiaHuang-Git">GitHub ↗</a><a href="https://orcid.org/0000-0002-3757-5153">ORCID ↗</a><a href="https://angstrom.hkust.edu.hk/members.html">Ångström Group ↗</a></div>
-      </div>
-    </section>
-  </main>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Email: <a class="contact-email" href="mailto:jhuangdd@connect.ust.hk">jhuangdd@connect.ust.hk</a><br>Department of Physics, HKUST · Hong Kong</p>
+      </section>
+    </main>
+  </div>
 
-  <footer class="site-footer"><p>© 2026 Jiajia Huang</p><p>Computational physics · HKUST</p><a href="#main">Back to top ↑</a></footer>
+  <footer class="site-footer">
+    <div class="footer-inner"><p>© 2026 Jiajia Huang</p><p>Last updated: 11 October 2026</p><a href="#about">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>

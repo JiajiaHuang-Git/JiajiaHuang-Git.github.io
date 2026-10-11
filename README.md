@@ -8,6 +8,7 @@ A lightweight, responsive static website. No build tools, tracking scripts, or e
 
 - Personal introduction, research, publications and links: `index.html`
 - Layout and colors: `styles.css`
+- Sidebar avatar (copied from the public GitHub profile): `avatar.jpg`
 - Search engine discovery: `robots.txt` and `sitemap.xml`
 
 GitHub Pages publishes `main` from the repository root. Pushing changes updates the live site automatically.
@@ -32,3 +33,7 @@ Verification confirms website ownership, not search indexing or a guaranteed ran
 - https://github.com/JiajiaHuang-Git/Methane-NN-dipole-model
 
 Only the site files belong in this public repository. Do not add private CVs, applications, unpublished work, or credentials.
+
+## Design
+
+White background, gray text, blue links, a profile sidebar and a responsive reading column. The layout was inspired by https://phyzyw.github.io/; the HTML and CSS are maintained directly in this repository.
