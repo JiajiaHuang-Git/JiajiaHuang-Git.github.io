@@ -1,0 +1,138 @@
+#analytics-settings,
+.analytics-details,
+.analytics-close,
+.analytics-choice {
+  font: inherit;
+  cursor: pointer;
+}
+
+#analytics-settings {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent, #305781);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.analytics-notice {
+  width: calc(100% - 80px);
+  max-width: 1080px;
+  margin: 0 auto 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line, #e2e5e9);
+  color: #000;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.analytics-notice p {
+  max-width: 760px;
+  margin: 0 0 12px;
+}
+
+.analytics-details {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent, #305781);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.analytics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.analytics-choice,
+.analytics-close {
+  min-height: 40px;
+  border: 1px solid var(--accent, #305781);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--accent, #305781);
+  line-height: 1.4;
+}
+
+.analytics-choice {
+  padding: 9px 15px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.analytics-close {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.analytics-choice:hover,
+.analytics-close:hover {
+  background: #f1f5f9;
+}
+
+#analytics-settings:focus-visible,
+.analytics-details:focus-visible,
+.analytics-close:focus-visible,
+.analytics-choice:focus-visible {
+  outline: 2px solid var(--accent, #305781);
+  outline-offset: 4px;
+}
+
+.analytics-dialog {
+  width: min(640px, calc(100% - 40px));
+  max-height: calc(100vh - 64px);
+  padding: 26px;
+  border: 1px solid var(--line, #e2e5e9);
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  font-family: var(--sans, Arial, sans-serif);
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-y: auto;
+}
+
+.analytics-dialog::backdrop {
+  background: rgb(0 0 0 / 25%);
+}
+
+.analytics-dialog-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.analytics-dialog h2 {
+  margin: 0;
+  font-family: var(--serif, Georgia, serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.analytics-dialog p {
+  margin: 0 0 14px;
+}
+
+.analytics-dialog a {
+  overflow-wrap: anywhere;
+}
+
+.analytics-status {
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .analytics-notice { width: calc(100% - 56px); }
+}
+
+@media (max-width: 700px) {
+  .analytics-notice { width: calc(100% - 40px); }
+  .analytics-dialog { padding: 20px; max-height: calc(100dvh - 40px); }
+  .analytics-dialog h2 { font-size: 22px; }
+  .analytics-dialog .analytics-choice { flex: 1 1 180px; }
+}

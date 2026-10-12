@@ -2,7 +2,7 @@
 
 Personal academic website: https://jiajiahuang-git.github.io/
 
-A lightweight, responsive static website. No build tools, tracking scripts, or external font services are required.
+A lightweight, responsive static website. No build tools or external font services are required. Optional Google Analytics loads only after a visitor opts in.
 
 ## Edit
 
@@ -23,6 +23,21 @@ GitHub Pages publishes `main` from the repository root. Pushing changes updates 
 6. Inspect `https://jiajiahuang-git.github.io/` and select **Request indexing**, if available.
 
 Verification confirms website ownership, not search indexing or a guaranteed ranking.
+
+## Google Analytics
+
+- Dashboard: https://analytics.google.com/analytics/web/#/a411609479p558430597/reports/intelligenthome
+- Account: Jiajia Huang (411609479)
+- Property: Jiajia Huang | HKUST (558430597)
+- Web stream: Jiajia Huang Personal Website (16109835048)
+- Measurement ID: `G-24NKMWFHTF` (public configuration, not a credential)
+- Consent controls and privacy notice: `analytics.js` and `analytics.css`; visitors can change their choice with the footer's Privacy & analytics button.
+- Google tags load only on HTTPS at `jiajiahuang-git.github.io`, after consent. Local files, localhost and other preview hosts are excluded.
+- Basic Consent Mode keeps all advertising consent denied. Google signals and advertising personalization are disabled. Enhanced measurement is disabled in the web stream; standard page views are retained.
+- Analytics cookies expire after 90 days without renewal on each visit. User and event data retention is two months, with reset on new activity disabled; aggregate reports may persist longer.
+- The code strips query strings and fragments from page and referrer addresses before sending them to Analytics.
+
+Use the Realtime report to check new visits. Only consenting visitors are measured, and content blockers may prevent collection. Prior unrecorded visits cannot be recovered.
 
 ## Public information sources
 
