@@ -36,4 +36,4 @@ Only the site files belong in this public repository. Do not add private CVs, ap
 
 ## Design
 
-White background, gray text, blue links, a profile sidebar and a responsive reading column. The layout was inspired by https://phyzyw.github.io/; the HTML and CSS are maintained directly in this repository.
+White background, black text, serif headings and blue links, with a profile sidebar and a responsive reading column. The page contains only About Me and Contact. The layout was inspired by https://phyzyw.github.io/; the HTML and CSS are maintained directly in this repository.
